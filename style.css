@@ -46,6 +46,12 @@ body {
   .video-card {
     background-color: #B89BCF;
     border-radius: 8px;
-    height: 100px;
+    overflow: hidden; /* Ensures thumbnails fit perfectly */
+  }
+  
+  .video-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
   
